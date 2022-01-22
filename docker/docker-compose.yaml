@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    image: node:lts
+    container_name: react-tutorial
+    tty: true
+    ports:
+      - 3000:3000
+    volumes:
+      - ../src:/src
+    working_dir: /src
