@@ -10,9 +10,9 @@ class Square extends React.Component {
 	    </button>
 	  );
 	}
-      }
+}
 
-      class Board extends React.Component {
+class Board extends React.Component {
 	renderSquare(i) {
 	  return <Square />;
 	}
@@ -41,9 +41,9 @@ class Square extends React.Component {
 	    </div>
 	  );
 	}
-      }
+}
 
-      class Game extends React.Component {
+class Game extends React.Component {
 	render() {
 	  return (
 	    <div className="game">
@@ -57,11 +57,11 @@ class Square extends React.Component {
 	    </div>
 	  );
 	}
-      }
+}
 
-      // ========================================
+// ========================================
 
-      ReactDOM.render(
+ReactDOM.render(
 	<Game />,
 	document.getElementById('root')
-      );
+);
